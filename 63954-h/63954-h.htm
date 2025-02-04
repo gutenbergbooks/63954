@@ -9,14 +9,13 @@
   <style type="text/css">
    body { margin-left:8%; margin-right:8%; }
    p { text-indent:1.15em; margin-top:0.1em; margin-bottom:0.1em; text-align:justify; }
-
-   h1 { text-align: center; font-weight: normal; font-size: 1.4em; margin: 2em auto 1em auto; }
-   .x-ebookmaker h1 { font-size: 1.2em; }
-   h1 { text-align: center; font-weight: normal; font-size: 1.2em; margin: 2em auto 1em auto; }
-   .x-ebookmaker h1 { font-size: 1.1em; }
-
+   h1 { text-align:center; font-weight:normal; page-break-before: always;
+        font-size:1.4em; margin-top:2em; margin-bottom:1em; margin-left:auto; margin-right:auto; }
+   h2 { text-align:center; font-weight:normal; page-break-before: always;
+        font-size:1.0em; margin-top:3em; margin-bottom:1em; margin-left:auto; margin-right:auto; }
+   h2.nobreak { page-break-before: avoid; }
    div.section { page-break-before:always; margin-top:4em; margin-bottom:4em; }
-
+   div.chapter { page-break-before:always; margin-top:4em; margin-bottom:4em; }
    table.toc {}
    table { page-break-inside: avoid; width:100%; }
    table.tcenter { border-collapse:collapse; padding:3px;
@@ -24,49 +23,15 @@
                    margin-left:2em; }
    td { vertical-align:top; }
    td.c1 { text-align:right; padding-right:0.7em; }
-   td.c2 { }
-
-   .toc { width:70%; margin:auto; }
-   .x-ebookmaker .toc { margin-left: 15%; width: 70%; }
-   .toc li { margin-top: 0.4em; }
+   td.c2 { font-variant:small-caps; }
+   div.cbline { margin-left:1.4em; text-indent:-1.4em; }
+   .caption { text-indent:0; padding:0.5em 0; text-align:center; font-size:smaller; }
    .loi { width:70%; margin:auto; }
    .x-ebookmaker .loi { margin-left: 15%; width: 70%; }
-   .loi li { margin-top: 0.4em; }
-
-   /* containers */
-   .lg-container-b { text-align: center; }
-   .x-ebookmaker .lg-container-b { clear: both; }
-   .lg-container-l { text-align: justify; }
-   .x-ebookmaker .lg-container-l { clear: both; }
-   .lg-container-r { text-align: right; }
-   .x-ebookmaker .lg-container-r { clear: both; }
-   .linegroup { display: inline-block; text-align: justify; }
-   .x-ebookmaker .linegroup { display: block; margin-left: 1.5em; }
-   .linegroup .group { margin: 1em auto; }
-   .linegroup .line { text-indent: -3em; padding-left: 3em; }
-   div.linegroup > :first-child { margin-top: 0; }
-
-   /* images */
-   .figcenter { clear: both; max-width: 100%; margin: 2em auto; text-align: center; }
-   .figcenter img { width: 100%; height: auto; }
-   .caption { text-indent:0; padding:0.5em 0; text-align:center; font-size:smaller; }
-   .id001 { width:60%; margin:0 auto; }
-   .x-ebookmaker .id001 { margin-left:20%; width:60%; }
-   .id002 { width:60%; }
-   .x-ebookmaker .id002 { margin-left:20%; width:60%; }
-   .id003 { width:60%; }
-   .x-ebookmaker .id003 { margin-left:20%; width:60%; }
-   .id004 { width:60%; }
-   .x-ebookmaker .id004 { margin-left:20%; width:60%; }
-   .id005 { width:60%; }
-   .x-ebookmaker .id005 { margin-left:20%; width:60%; }
-   .id006 { width:60%; }
-   .x-ebookmaker .id006 { margin-left:20%; width:60%; }
-   .id007 { width:60%; }
-   .x-ebookmaker .id007 { margin-left:20%; width:60%; }
-   .id008 { width:60%; }
-   .x-ebookmaker .id008 { margin-left:20%; width:60%; }
-
+   .loi li { margin-top: 0.4em; font-size:1.1em; }
+   p { font-size:1.1em; }
+   .toc td { font-size:1.1em; }
+   p.caption { font-size:1em; }
   </style>
 </head>
 <body>
@@ -88,123 +53,111 @@ country where you are located before using this ebook.
 <div style='display:block;margin:1em 0'>Character set encoding: UTF-8</div>
 <div style='display:block; margin-left:2em; text-indent:-2em'>Produced by: Roger Frank</div>
 <div style='margin-top:2em;margin-bottom:4em'>*** START OF THE PROJECT GUTENBERG EBOOK MOSTLY ABOUT NIBBLE THE BUNNY ***</div>
-<h1 style='font-size:1.4em; text-align:center;'>MOSTLY ABOUT NIBBLE THE BUNNY</h1>
-
-<div class='section'>
-
-<div style='text-align:center;'>
-    <div style='font-size:1.2em;margin-top:2em;'>Told at Twilight Stories</div>
-    <div style='margin-bottom:1.0em;'>By JOHN BRECK</div>
-</div>
-
-<div class='lg-container-b'>
-  <div class='linegroup'>
-    <div class='group'>
-        <div class='line'>MOSTLY ABOUT NIBBLE THE BUNNY</div>
-        <div class='line'>NIBBLE RABBIT MAKES MORE FRIENDS</div>
-        <div class='line'>THE SINS OF SILVERTIP THE FOX</div>
-        <div class='line'>THE COON’S TRICKS</div>
-        <div class='line'>THE WAVY TAILED WARRIOR</div>
-        <div class='line'>TAD COON’S GREAT ADVENTURE</div>
-        <div class='line'>THE BAD LITTLE OWLS</div>
-        <div class='line'>THE JAY BIRD WHO WENT TAME</div>
-    </div>
-  </div>
-</div>
-
-</div>  <!-- section end -->
-
-<div class='section'>
-
-<div id='id01' class='figcenter id001'>
-    <img src='images/i01.jpg' alt='' />
-    <p class='caption'>“Cheer up, Bunny,” chirped Bobby Robin</p>
-</div>
-
-</div>  <!-- section end -->
+<h1>MOSTLY ABOUT NIBBLE THE BUNNY</h1>
 
 <div class='section'>
 
 <div style='text-align:center; text-indent:0; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; '>
-    <div style='margin-bottom:1.0em;'>Told at Twilight Stories</div>
-    <div style='font-size:1.6em;'>Mostly About Nibble the Bunny</div>
-    <div style='margin-top:1.0em;'>by</div>
-    <div style='font-size:1.2em;'>John Breck</div>
-    <div style='margin-top:1.0em;'>Illustrated by</div>
-    <div>William T. Andrews</div>
-    <div style='margin-top:1.0em;'>Garden City — New York </div>
-    <div>Doubleday, Page &amp; Company</div>
-    <div style='font-size:0.8em;margin-top:0.7em;'>1923</div>
+<div>Told at Twilight Stories</div>
+<div>By JOHN BRECK</div>
+</div>
+<div style='text-align:center; margin-top:0.5em; margin-bottom:0.5em; margin-left:auto; margin-right:auto'>
+<div style='display:inline-block; text-align:left;'>
+<div class='cbline'>MOSTLY ABOUT NIBBLE THE BUNNY</div>
+<div class='cbline'>NIBBLE RABBIT MAKES MORE FRIENDS</div>
+<div class='cbline'>THE SINS OF SILVERTIP THE FOX</div>
+<div class='cbline'>THE COON’S TRICKS</div>
+<div class='cbline'>THE WAVY TAILED WARRIOR</div>
+<div class='cbline'>TAD COON’S GREAT ADVENTURE</div>
+<div class='cbline'>THE BAD LITTLE OWLS</div>
+<div class='cbline'>THE JAY BIRD WHO WENT TAME</div>
+</div>
+</div>
 </div>
 
-</div>  <!-- section end -->
+<div class='section'>
+
+<div id='i001' style='margin-top:1em; margin-bottom:1em; margin-left:10.0%; width:80%;'>
+  <img src='images/i001.jpg' alt='' style='width:100%' />
+<p class='caption'>“Cheer up, Bunny,” chirped Bobby Robin</p>
+</div>
+</div>
 
 <div class='section'>
 
 <div style='text-align:center; text-indent:0; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; '>
-    <div style='font-size:0.8em;'>COPYRIGHT, 1923, BY</div>
-    <div style='font-size:0.8em;margin-bottom:1.0em;'>DOUBLEDAY, PAGE &amp; COMPANY</div>
-    <div style='font-size:0.8em;'>ALL RIGHTS RESERVED, INCLUDING THAT</div>
-    <div style='font-size:0.8em;'>OF TRANSLATION INTO FOREIGN LANGUAGES</div>
-    <div style='font-size:0.8em;'>INCLUDING THE SCANDINAVIAN</div>
+<div style='font-size:0.9em;margin-bottom:1em;'>Told at Twilight Stories</div>
+<div style='font-size:1.4em;margin-bottom:0.7em;'>MOSTLY ABOUT NIBBLE THE BUNNY</div>
+<div>by</div>
+<div style='font-size:1.2em;margin-bottom:0.7em;'>John Breck</div>
+<div>Illustrated by</div>
+<div style='font-size:1.1em;margin-bottom:0.7em;'>William T. Andrews</div>
+<div style='font-size:0.82em;'>Garden City—New York</div>
+<div style='margin-bottom:0.7em;'>Doubleday, Page &amp; Company</div>
+<div style='font-size:0.82em;'>1923</div>
+</div>
 </div>
 
-</div>  <!-- section end -->
+<div class='section'>
+
+<div style='font-size:smaller;'>
+<div style='text-align:center; text-indent:0; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; '>
+<div>COPYRIGHT, 1923,</div>
+<div style='margin-bottom:0.7em;'>BY DOUBLEDAY, PAGE &amp; COMPANY</div>
+<div>ALL RIGHTS RESERVED, INCLUDING THAT</div>
+<div>OF TRANSLATION INTO FOREIGN LANGUAGES</div>
+<div style='margin-bottom:0.7em;'>INCLUDING THE SCANDINAVIAN</div>
+<div style='margin-bottom:0.7em;'>COPYRIGHT, 1920, BY THE ASSOCIATED NEWSPAPERS</div>
+<div>PRINTED IN THE UNITED STATES</div>
+<div>AT</div>
+<div style='margin-bottom:0.7em;'>THE COUNTRY LIFE PRESS, GARDEN CITY, N. Y.</div>
+<div>First Edition</div>
+</div>
+</div>
+</div>
+
+<div class='section'>
+
+<div style='text-align:center'>CONTENTS</div>
+<table class='toc tcenter' summary="" style='margin-bottom:3em'>
+<tbody>
+  <tr><td class='c1'>I.</td><td class='c2'><a href='#chI'>A Very Small Bunny Has a Very Big Adventure</a></td></tr>
+  <tr><td class='c1'>II.</td><td class='c2'><a href='#chII'>Nibble Rabbit Learns His Fortune</a></td></tr>
+  <tr><td class='c1'>III.</td><td class='c2'><a href='#chIII'>Nibble Rabbit to the Rescue!</a></td></tr>
+  <tr><td class='c1'>IV.</td><td class='c2'><a href='#chIV'>What Happens When Folks Lose Their Tempers</a></td></tr>
+  <tr><td class='c1'>V.</td><td class='c2'><a href='#chV'>Nibble Rabbit’s Storm Party</a></td></tr>
+  <tr><td class='c1'>VI.</td><td class='c2'><a href='#chVI'>The Little Bunny Meets the Little Boy</a></td></tr>
+  <tr><td class='c1'>VII.</td><td class='c2'><a href='#chVII'>Why the Cow Got Her Horns</a></td></tr>
+  <tr><td class='c1'>VIII.</td><td class='c2'><a href='#chVIII'>Nibble Fools Ouphe in His Own Haystack</a></td></tr>
+  <tr><td class='c1'>IX.</td><td class='c2'><a href='#chIX'>Nibble Digs into Trouble—and Slips Out</a></td></tr>
+</tbody>
+</table>
+</div>
 
 <div class='section'>
 
 <div style='text-align:center; text-indent:0; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; '>
-    <div style='font-size:0.8em;'>COPYRIGHT, 1920, BY THE ASSOCIATED NEWSPAPERS</div>
-    <div style='font-size:0.8em;'>PRINTED IN THE UNITED STATES</div>
-    <div style='font-size:0.8em;'>AT</div>
-    <div style='font-size:0.8em;'>THE COUNTRY LIFE PRESS, GARDEN CITY, N. Y.</div>
-    <div style='font-size:0.8em;margin-top:0.7em;'>First Edition</div>
+<div>LIST OF ILLUSTRATIONS</div>
 </div>
-
-</div>  <!-- section end -->
-
-<div class='section'>
-
-    <div style='text-align:center'>CONTENTS</div>
-
-    <ul class='toc' style='list-style-type:none; display:table; margin-top:1em;'>
-        <li>I. <a href='#chI'>A Very Small Bunny Has a Very Big Adventure</a></li>
-        <li>II. <a href='#chII'>Nibble Rabbit Learns His Fortune</a></li>
-        <li>III. <a href='#chIII'>Nibble Rabbit to the Rescue!</a></li>
-        <li>IV. <a href='#chIV'>What Happens When Folks Lose Their Tempers</a></li>
-        <li>V. <a href='#chV'>Nibble Rabbit’s Storm Party</a></li>
-        <li>VI. <a href='#chVI'>The Little Bunny Meets the Little Boy</a></li>
-        <li>VII. <a href='#chVII'>Why the Cow Got Her Horns</a></li>
-        <li>VIII. <a href='#chVIII'>Nibble Fools Ouphe in His Own Haystack</a></li>
-        <li>IX. <a href='#chIX'>Nibble Digs into Trouble—and Slips Out</a></li>
-    </ul>
-
-</div>
-
-<div class='section'>
-
-<div style='text-align:center'>LIST OF ILLUSTRATIONS</div>
-
 <ul class='loi' style='list-style-type:none; display:table; margin-top:1em;;'>
-    <li><a href='#id01'>“Cheer up, Bunny,” chirped Bobby Robin</a></li>
-    <li><a href='#id02'>Bobby and Glider were making such a racket that every one was coming to listen to them</a></li>
-    <li><a href='#id03'>Dr. Muskrat pulls Nibble out of the broad pond</a></li>
-    <li><a href='#id04'>Nibble digs Bob White’s mother out of the bank</a></li>
-    <li><a href='#id05'>Nibble darted into the first shock he came to</a></li>
-    <li><a href='#id06'>Silvertip pricked up his ears</a></li>
-    <li><a href='#id07'>Nibble hid behind a fence post</a></li>
-    <li><a href='#id08'>Tommy held Nibble up by his long ears</a></li>
+    <li><a href='#i001'>“Cheer up, Bunny,” chirped Bobby Robin</a></li>
+    <li><a href='#i002'>Bobby and Glider were making such a racket that every one was coming to listen to them</a></li>
+    <li><a href='#i003'>Dr. Muskrat pulls Nibble out of the broad pond</a></li>
+    <li><a href='#i004'>Nibble digs Bob White’s mother out of the bank</a></li>
+    <li><a href='#i005'>Nibble darted into the first shock he came to</a></li>
+    <li><a href='#i006'>Silvertip pricked up his ears</a></li>
+    <li><a href='#i007'>Nibble hid behind a fence post</a></li>
+    <li><a href='#i008'>Tommy held Nibble up by his long ears</a></li>
 </ul>
-
-</div>  <!-- section end -->
+</div>
 
 <div class='chapter'>
 
 <div style='text-align:center; text-indent:0; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; '>
-<div style='font-size:1.4em;margin-top:4em;'>MOSTLY ABOUT NIBBLE THE BUNNY </div>
+<div style='font-size:1.4em;margin-top:4em;'>MOSTLY ABOUT NIBBLE THE BUNNY</div>
 </div>
 
-<h2 style='page-break-before:avoid;' id='chI' title='I: A VERY SMALL BUNNY HAS A VERY BIG ADVENTURE'>
+<h2 class='nobreak' id='chI' title='I: A VERY SMALL BUNNY HAS A VERY BIG ADVENTURE'>
   <span style='font-size:1.2em'>CHAPTER I</span><br /><span style='font-size:1.0em'>A VERY SMALL BUNNY HAS A VERY BIG ADVENTURE</span>
 </h2>
 
@@ -397,9 +350,9 @@ who all hated the snake. Even Chatter Squirrel, who doesn’t get on with
 Bobby any too well himself, came leaping across his pathway among the
 branches.</p>
 
-<div id='id02' class='figcenter id002'>
-    <img src='images/i02.jpg' alt='' />
-    <p class='caption'>Bobby and Glider were making such a racket that everyone was coming to listen to them</p>
+<div id='i002' style='margin-top:1em; margin-bottom:1em; margin-left:10.0%; width:80%;'>
+  <img src='images/i002.jpg' alt='' style='width:100%' />
+<p class='caption'>Bobby and Glider were making such a racket that everyone was coming to listen to them</p>
 </div>
 
 <p>“Snail eater, snail eater!” yelled Bobby. Which was the awfullest thing
@@ -447,7 +400,7 @@ like Nibble’s bounce, right into the middle of the Brush Pile.</p>
 <p>“Help!” shrieked Bobby Robin. But Glider never spoke a single word.
 Neither did Silvertip. His mouth was too full. Glider was in it.</p>
 
-</div> <!-- chapter -->
+</div>
 
 <div class='chapter'>
 
@@ -467,7 +420,7 @@ matter to me which eats which. They’re both tried to eat me since
 morning.” He was still the little brown knot on his log that he had
 frozen into when Silvertip came past. “Chatter, is Silvertip looking?”</p>
 
-<p>“No. He’s spread out in the sun sleeping off his meal,” answered
+<p>“No. He’s spread out in the sun sleeping off his meal,” answered
 Chatter, craning his neck to see where Nibble was hidden. And his eyes
 fairly popped when that little brown knot slipped down from the far side
 of the log and limped away.</p>
@@ -536,18 +489,11 @@ you’re all right now.</p>
 
 <div style='text-align:center; margin-top:0.5em; margin-bottom:0.5em; margin-left:auto; margin-right:auto'>
 <div style='display:inline-block; text-align:left;'>
+<div class='cbline'>“In the full of the moon</div>
+<div class='cbline' style='padding-left:1.4em; '>  Eyes open soon.</div>
+<div class='cbline'>Plucked in the wane</div>
+<div class='cbline' style='padding-left:1.4em; '>  Eyes close again,”</div>
 </div>
-</div>
-
-<div class='lg-container-b'>
-  <div class='linegroup'>
-    <div class='group'>
-        <div class='line'>“In the full of the moon</div>
-        <div class='line' style='margin-left:1.4em;'>Eyes open soon.</div>
-        <div class='line'>Plucked in the wane</div>
-        <div class='line' style='margin-left:1.4em;'>Eyes close again,”</div>
-    </div>
-  </div>
 </div>
 
 <p style='text-indent:0'>he quoted. “That’s the rule for flagroot. Now I’ll put you to sleep with
@@ -606,9 +552,9 @@ flew by. He craned his neck and saw something floating down from
 upstream as softly as a stick in the current. It was the fat old doctor
 with a big root in his mouth.</p>
 
-<div id='id03' class='figcenter id003'>
-    <img src='images/i03.jpg' alt='' />
-    <p class='caption'>Dr. Muskrat pulls Nibble out of the broad pond</p>
+<div id='i003' style='margin-top:1em; margin-bottom:1em; margin-left:10.0%; width:80%;'>
+  <img src='images/i003.jpg' alt='' style='width:100%' />
+<p class='caption'>Dr. Muskrat pulls Nibble out of the broad pond</p>
 </div>
 
 <p>He slipped up beside Nibble without a sound. “I had to scour the bottom
@@ -633,13 +579,11 @@ dying out of the west and stars were already twinkling in the sky.
 Doctor Muskrat was studying their reflections where they sparkled in the
 pool. He was saying something to himself.</p>
 
-<div class='lg-container-b'>
-  <div class='linegroup'>
-    <div class='group'>
-        <div class='line'>“By dusk and by dawn he shall travel alone</div>
-        <div class='line'>And all troubles are his excepting his own.”</div>
-    </div>
-  </div>
+<div style='text-align:center; margin-top:0.5em; margin-bottom:0.5em; margin-left:auto; margin-right:auto'>
+<div style='display:inline-block; text-align:left;'>
+<div class='cbline'>“By dusk and by dawn he shall travel alone</div>
+<div class='cbline'>And all troubles are his excepting his own.”</div>
+</div>
 </div>
 
 <p>“Is that right?” and he pricked his ears. Nibble’s own ears flew up, but
@@ -655,7 +599,7 @@ pond, so you had better hurry to the bank and find the quail.”</p>
 <p>Which last was strictly true and not magic at all, because the stars had
 danced very hard in Slyfoot’s ripples.</p>
 
-</div> <!-- chapter -->
+</div>
 
 <div class='chapter'>
 
@@ -689,13 +633,11 @@ flew.</p>
 <p>So Nibble was hopping ashore repeating to himself his fortune that the
 stars had told the doctor for him.</p>
 
-<div class='lg-container-b'>
-  <div class='linegroup'>
-    <div class='group'>
-        <div class='line'>“By dusk and by dawn he shall travel alone</div>
-        <div class='line'>And all troubles are his excepting his own.”</div>
-    </div>
-  </div>
+<div style='text-align:center; margin-top:0.5em; margin-bottom:0.5em; margin-left:auto; margin-right:auto'>
+<div style='display:inline-block; text-align:left;'>
+<div class='cbline'>“By dusk and by dawn he shall travel alone</div>
+<div class='cbline'>And all troubles are his excepting his own.”</div>
+</div>
 </div>
 
 <p>And he wasn’t lonely any more because, you see, that was part of his
@@ -749,9 +691,9 @@ lost sight of his tufty white tail. But they knew how he was working,
 for they could see the dirt fly when he kicked his strong hind feet to
 clear it out of the hole.</p>
 
-<div id='id04' class='figcenter id004'>
-    <img src='images/i04.jpg' alt='' />
-    <p class='caption'>Nibble digs Bob White’s mother out of the bank</p>
+<div id='i004' style='margin-top:1em; margin-bottom:1em; margin-left:10.0%; width:80%;'>
+  <img src='images/i004.jpg' alt='' style='width:100%' />
+<p class='caption'>Nibble digs Bob White’s mother out of the bank</p>
 </div>
 
 <p>Soon his little claws almost refused to move. But he wouldn’t let them
@@ -862,12 +804,11 @@ he said, “to the deepest woods. There’s a smell of weather. Come on.
 Whit! Whit! Good-bye, Nibble.” And they whirred away before Nibble could
 ask what Bob meant.</p>
 
-<div id='id05' class='figcenter id005'>
-    <img src='images/i05.jpg' alt='' />
-    <p class='caption'>Nibble darted into the first shock he came to</p>
+<div id='i005' style='margin-top:1em; margin-bottom:1em; margin-left:10.0%; width:80%;'>
+  <img src='images/i005.jpg' alt='' style='width:100%' />
+<p class='caption'>Nibble darted into the first shock he came to</p>
 </div>
-
-</div> <!-- chapter -->
+</div>
 
 <div class='chapter'>
 
@@ -987,7 +928,7 @@ ducks! You’ll stand there trying to mind my business for me until
 Silvertip catches you.” But there’s no way of knowing how much angrier
 Chatter might have been because right then something did happen. He gave
 one shriek—“Hooter!”—and made a flying leap for that hollow Oak Tree.
-And Mrs. Hooter clapped her beak at the hole.</p>
+And Mrs. Hooter clapped her beak at the hole.</p>
 
 <p>“Stickly Prickles!” said Nibble to himself—that really isn’t swearing.
 “What are those owls doing out this time of the day?” For he could see
@@ -997,14 +938,14 @@ chance while they were chasing Chatter to dart across the Cloverpatch
 and into the first shock he came to.</p>
 
 <p>But he didn’t stay there. Just as he began to breathe again he heard the
-voice of Mrs. Hooter right above him. She was speaking crossly to her
+voice of Mrs. Hooter right above him. She was speaking crossly to her
 husband. “Pay attention,” she said. “It may be three days before we can
 hunt again. He went in there. I saw him.”</p>
 
 <p>Nibble guessed that a small brown rabbit was the “he” they wanted, so he
 slipped out of the other side of that shock and ran across to the next.</p>
 
-<p>“There he goes!” screeched Mrs. Hooter. “There he goes! Catch him,
+<p>“There he goes!” screeched Mrs. Hooter. “There he goes! Catch him,
 quick!” But Hooter was too slow. Nibble was safe again.</p>
 
 <p>But was he? For in that second shock slept—Silvertip the Fox!</p>
@@ -1017,17 +958,17 @@ ears. Whatever were they shouting about?</p>
 right behind him. He never sniffed anything but Owl. For they were very
 close.</p>
 
-<p>“Go in and drive him out!” ordered Mrs. Hooter.</p>
+<p>“Go in and drive him out!” ordered Mrs. Hooter.</p>
 
 <p>“I—er—I’ve never done anything of the kind,” Hooter objected. “I don’t
 think I care to begin.”</p>
 
-<p>“Coward!” hissed Mrs. Hooter. And she flew into a terrible temper. She
+<p>“Coward!” hissed Mrs. Hooter. And she flew into a terrible temper. She
 shook him until his beak rattled. Then she bounced him down. “You see to
 it that you catch him when he comes out!” she raved. “I’ll go myself!”</p>
 
 <p>And she did. Right into Silvertip! And let me tell you that for one
-minute feathers flew and fur frazzled. Then Mrs. Hooter flew squawking
+minute feathers flew and fur frazzled. Then Mrs. Hooter flew squawking
 out one side and Silvertip limped yelping out of the other and Nibble
 said to himself, “I’m so glad it wasn’t my temper that was lost.” He had
 the little cornstalk tent all to himself. A clawful of feathers and a
@@ -1092,7 +1033,7 @@ was snug and warm. And the bats hung themselves upside down from the
 middle of it and turned down their little webby tails over their toes
 like the flap of an envelope and went to sleep again.</p>
 
-</div> <!-- chapter -->
+</div>
 
 <div class='chapter'>
 
@@ -1368,15 +1309,15 @@ things.”</p>
 Nibble. “I will, if I know him when I see him. That’s the only way I’ll
 ever understand what you’ve been talking about.”</p>
 
-<div id='id06' class='figcenter id006'>
-    <img src='images/i06.jpg' alt='' />
-    <p class='caption'>Silvertip pricked up his ears</p>
+<div id='i006' style='margin-top:1em; margin-bottom:1em; margin-left:10.0%; width:80%;'>
+  <img src='images/i006.jpg' alt='' style='width:100%' />
+<p class='caption'>Silvertip pricked up his ears</p>
 </div>
 
 <p>“Don’t do it,” shouted all the others. “Keep away from Man! Keep away
 from Man! He’s more dangerous than Silvertip!”</p>
 
-</div> <!-- chapter -->
+</div>
 
 <div class='chapter'>
 
@@ -1458,7 +1399,7 @@ a wild thing.</p>
 <p>So the small boy and the smaller rabbit were looking at each other in a
 very friendly way. When all of a sudden the Wind told Nibble something.
 A light crunch of snow tickled his long ear and a soft whiff of scent
-tickled his nose. Silvertip the Pox had just jumped over the rail fence
+tickled his nose. Silvertip the Fox had just jumped over the rail fence
 into the Clover Patch, right behind him.</p>
 
 <p>“Danger! Come along!” he thumped with his little hind feet. “This way!
@@ -1489,9 +1430,9 @@ Nibble wanted to kick up his heels with joy, because he knew something
 Silvertip was afraid of. But Tommy Peele never knew anything at all
 about it.</p>
 
-<div id='id07' class='figcenter id007'>
-    <img src='images/i07.jpg' alt='' />
-    <p class='caption'>Nibble hid behind a fence post</p>
+<div id='i007' style='margin-top:1em; margin-bottom:1em; margin-left:10.0%; width:80%;'>
+  <img src='images/i007.jpg' alt='' style='width:100%' />
+<p class='caption'>Nibble hid behind a fence post</p>
 </div>
 
 <p>Just about the time Silvertip’s tail dusted the middle rail of the
@@ -1569,7 +1510,7 @@ a lot of little birds cheeping and gossiping up above him. One of them
 said, “There he is! I say, Bunny, what did you do that for?”</p>
 
 <p>“Do what?” demanded Nibble, craning his neck so he could see who he was
-talking to. “What did I do, Mr. Chirp?”</p>
+talking to. “What did I do, Mr. Chirp?”</p>
 
 <p>“Tried to ride the red heifer,” answered Chirp Sparrow.</p>
 
@@ -1624,7 +1565,7 @@ smells of it.”</p>
 <p>“Away back when the world was new—tell me about it.” Now Nibble was all
 pleased and excited.</p>
 
-</div> <!-- chapter -->
+</div>
 
 <div class='chapter'>
 
@@ -1646,10 +1587,10 @@ trouble.”</p>
 great-great-grandfather?” interrupted Nibble excitedly.</p>
 
 <p>“Not in the very first-off beginning,” said Chirp. “You see, the weasel
-was one of those who came up from under the Earth-that-was-common-to-all.
-He wasn’t one of Mother Nature’s own things. But the wolf was. He was
-just a little too clever, but she liked him and trusted him—more than
-most.</p>
+was one of those who came up from under the
+Earth-that-was-common-to-all. He wasn’t one of Mother Nature’s own
+things. But the wolf was. He was just a little too clever, but she liked
+him and trusted him—more than most.</p>
 
 <p>“Mother Nature had made a bargain with the plants. The beasts were to
 eat them. But she promised the plants that they wouldn’t die, but would
@@ -1694,7 +1635,7 @@ mountain tops, but their fingers were all cold, so they made things
 worse than ever. And the beasts were all cold, ’specially the cows.”
 Chirp stopped to stretch his wing.</p>
 
-<p>“Please go on, Mr. Chirp,” pleaded Nibble. He was so excited and
+<p>“Please go on, Mr. Chirp,” pleaded Nibble. He was so excited and
 impatient! “Please get to the part about the wolves!”</p>
 
 <p>“I will,” promised Chirp Sparrow. “Only these birds must settle down and
@@ -1798,7 +1739,7 @@ went on. “You see, they were her own beasts, not like the weasel who
 came up from under the earth and was wicked from the very first.”</p>
 
 <p>“Were lots of others bad, too?” demanded Nibble. “Bad things are always
-interesting, you know.”</p>
+interesting, you know.</p>
 
 <p>“Oh, yes. Even some of the birds.” Chirp said this as though it were the
 most wicked thing in the world for a bird to be bad. “But we weren’t.
@@ -1842,7 +1783,7 @@ time.</p>
 hatch and I’ll crunch your baby birds’ bones for you.” He clashed his
 yellow fangs horribly.</p>
 
-</div> <!-- chapter -->
+</div>
 
 <div class='chapter'>
 
@@ -1850,7 +1791,7 @@ yellow fangs horribly.</p>
   <span style='font-size:1.2em'>CHAPTER VIII</span><br /><span style='font-size:1.0em'>NIBBLE FOOLS OUPHE IN HIS OWN HAYSTACK</span>
 </h2>
 
-<p>The little rabbit crouched down in the hole in the bottom of the
+<p>The little rabbit crouched down in the bole in the bottom of the
 haystack not three feet away from the wicked rat. But Ouphe hadn’t seen
 him. He was sure of it because Ouphe kept squalling at the sparrows all
 the nastiest things he could put his tongue to. And the sparrows,
@@ -1879,9 +1820,9 @@ his own tattling tail in an awful rage.</p>
 <p>“It wasn’t the field-mice, was it?” he snarled. “Then who were you
 talking to? I’ll slit your gossiping throat for you!”</p>
 
-<div id='id08' class='figcenter id008'>
-    <img src='images/i08.jpg' alt='' />
-    <p class='caption'>Tommy held Nibble up by his long ears</p>
+<div id='i008' style='margin-top:1em; margin-bottom:1em; margin-left:10.0%; width:80%;'>
+  <img src='images/i008.jpg' alt='' style='width:100%' />
+<p class='caption'>Tommy held Nibble up by his long ears</p>
 </div>
 
 <p>And right about then Nibble decided it was time to move. But he didn’t
@@ -1952,7 +1893,7 @@ know what he meant by it. But a rat wouldn’t.</p>
 
 <p>You ought to have seen the change that came over Ouphe. He quickly
 cleaned his whiskers and began to talk as though he had honey in his
-throat. “What? A rabbit? Why, Mr. Sparrow, how could you keep me here
+throat. “What? A rabbit? Why, Mr. Sparrow, how could you keep me here
 playing jokes when I had a visitor? That was very unkind of you. I must
 invite him in and make him at home.”</p>
 
@@ -1962,11 +1903,11 @@ find him. But Nibble knew mighty well that he was only pretending. When
 he snarled out that he’d “slit Chirp’s throat” and “crunch the bones of
 his baby birds” Ouphe had meant every wicked word of it.</p>
 
-<p>“Ha, ha!” laughed Chirp. “You’re so funny, Mr. Ouphe, we don’t quite
+<p>“Ha, ha!” laughed Chirp. “You’re so funny, Mr. Ouphe, we don’t quite
 know how to take you. That rabbit just stepped inside when he heard you
 invite him. I saw his tail.”</p>
 
-<p>“Wait for me, Mr. Rabbit,” said Ouphe in his sticky, sweet voice, “I’d
+<p>“Wait for me, Mr. Rabbit,” said Ouphe in his sticky, sweet voice, “I’d
 like to eat with you. And we’ll invite my dear little friends the
 field-mice too.” He said that because he knew perfectly well Nibble had
 heard him call them “tattle-tales.” And he thumped down right into
@@ -1990,7 +1931,7 @@ then he sent Ouphe in there to look for me while I skip off. Only I wish
 I’d thanked that field-mouse who showed me the way out of Ouphe’s holes.
 I’ll do something for her some day.” And he did. You wait and see.</p>
 
-</div> <!-- chapter -->
+</div>
 
 <div class='chapter'>
 
@@ -2123,9 +2064,10 @@ and Doctor Muskrat, of course, and—and— Oh, you’ll just have to wait
 till that story has a cover of its own, I guess. ’Cause this one’s too
 full to squeeze it in.</p>
 
-<p style='text-indent:0; text-align:center; margin-top:1.5em;'>THE END</p>
-
-</div> <!-- chapter -->
+<div style='text-align:center; text-indent:0; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; '>
+<div style='margin-top:1em;'>THE END</div>
+</div>
+</div>
 <div style='display:block;margin-top:4em'>*** END OF THE PROJECT GUTENBERG EBOOK MOSTLY ABOUT NIBBLE THE BUNNY ***</div>
 <div style='display:block;margin:1em 0;'>This file should be named 63954-h.htm or 63954-h.zip</div>
 <div style='display:block;margin:1em 0;'>This and all associated files of various formats will be found in https://www.gutenberg.org/6/3/9/5/63954/</div>
